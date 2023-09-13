@@ -15,6 +15,7 @@ const App = () => {
 
   return (
     <View style={styles.container}>
+      <StatusBar barStyle={'light-content'}/>
       <MusicPlayer/>
     </View>
   );
