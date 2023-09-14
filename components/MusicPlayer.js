@@ -27,6 +27,11 @@ const MusicPlayer = () =>{
               style={styles.imgEdit}
             />
           </View>
+
+          <View>
+            <Text style={styles.title}>Título da música</Text>
+            <Text style={styles.artista}>Artista</Text>
+          </View>
         </View>
 
         <View style={styles.bottonContainer}>
@@ -85,6 +90,21 @@ const styles = StyleSheet.create({
     height:'100%',
     borderRadius:15,
   },
+
+  title:{
+    fontSize:18,
+    fontWeight:'bold',
+    textAlign:'center',
+    color:'#f5f5f5',
+  },
+
+  artista:{
+    fontSize:16,
+    fontWeight:200,
+    textAlign:'center',
+    color:'#eeeeee',
+  },
+
   bottonContainer: {
     borderTopColor: '#ffffff',
     borderTopWidth: 1,
