@@ -7,25 +7,46 @@ import {
   StatusBar,
   StyleSheet,
   Text,
+  Touchable,
+  TouchableOpacity,
   useColorScheme,
   View,
 } from 'react-native';
 
-import Ionicons from 'react-native-vector-icon/Ionicons';
+const {width, heigth} = Dimensions.get("window");
 
 const MusicPlayer = () =>{
-  const {width, heigth} = Dimensions.get("window");
+  
 
     return(
       <SafeAreaView style={styles.container}> 
         <View style={styles.containerPrincipal}> 
-          
+          <View style={styles.ImagesWrapper}>
+            <Image 
+              source={require('../assets/images/kiss.jpeg')}
+              style={styles.imgEdit}
+            />
+          </View>
         </View>
 
         <View style={styles.bottonContainer}>
           <View style = {styles.bottonControll}> 
-            <Ionicons name="heart-outline" size={30}/>
-            <Ionicons name="repeat" size={30}/>
+            <TouchableOpacity onPress={()=>{}}>
+              <Text>oi</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity onPress={()=>{}}>
+              <Text>oi</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity onPress={()=>{}}>
+              <Text>oi</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity onPress={()=>{}}>
+              <Text>oi</Text>
+            </TouchableOpacity>
+            
           </View>
         </View>
       </SafeAreaView>
@@ -43,6 +64,26 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+
+  ImagesWrapper:{
+    width:300,
+    height:300,
+    marginBottom:25,
+    shadowColor:'#ccc',
+    shadowOffset:{
+      width:5,
+      heigth:5
+    },
+    shadowOpacity:0.5,
+    shadowRadius:3.9,
+    elevation:5,
+  },
+
+  imgEdit:{
+    width:'100%',
+    height:'100%',
+    borderRadius:15,
   },
   bottonContainer: {
     borderTopColor: '#ffffff',
